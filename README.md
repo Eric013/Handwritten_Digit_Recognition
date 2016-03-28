@@ -21,4 +21,15 @@ Needs PIL, struct, sys, math, os, os.path libraries.
 #### Python Version
 Python 3.4
 #### Results
-73 / 100 of the training data set are correctly classified.
+8203 / 10000 of the training data set are correctly classified.
+
+### Clustering and average comparison
+#### Idea
+Comparing the new image to the average images created with the learning samples. However we divide the same number by clustering in order to correct some differences (as rotation).
+The minimum squared error between the new image and the average images of 0,1 .. 9 will be the best approximation.
+#### Library
+Needs PIL, struct, sys, math, os, os.path libraries.
+#### Python Version
+Python 3.4
+#### Results
+8203 / 10000 of the training data set are correctly classified.

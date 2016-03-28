@@ -6,15 +6,15 @@
 
 from PIL import Image
 
-def average(images, save_path, save = True) :
+def average(images, save_path = None) :
 	""" Computes the average image for a dictionnary of images :
 		for each key, it computes the average image and save it 
-		at save_path if save is True """
+		at save_path if save_path is not None """
 	average = []
 
 	for number in images.keys() :
 		res = [sum([images[number][image][pixel] for image in range(len(images[number]))])/len(images[number]) for pixel in range(len(images[number][0]))]
-		if save :
+		if save_path != None :
 			imNew = Image.new("L" ,(28,28))  
 			imNew.putdata(res)
 			imNew.save(save_path + str(number), "JPEG")
