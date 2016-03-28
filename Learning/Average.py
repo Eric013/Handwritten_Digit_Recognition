@@ -13,7 +13,9 @@ def average(images, save_path = None) :
 	average = []
 
 	for number in images.keys() :
-		res = [sum([images[number][image][pixel] for image in range(len(images[number]))])/len(images[number]) for pixel in range(len(images[number][0]))]
+		res = [sum([images[number][image][pixel] 
+			for image in range(len(images[number]))])/len(images[number]) 
+			for pixel in range(len(images[number][0]))]
 		if save_path != None :
 			imNew = Image.new("L" ,(28,28))  
 			imNew.putdata(res)
@@ -29,7 +31,8 @@ def squared_error(image, numbers_image) :
 	res = []
 
 	for number in range(len(numbers_image)) :
-		res.append(sum([(image[pixel] - numbers_image[number][pixel])**2 for pixel in range(len(image))]))
+		res.append(sum([(image[pixel] - numbers_image[number][pixel])**2 
+			for pixel in range(len(image))]))
 	
 	return res
 

@@ -32,4 +32,4 @@ Needs PIL, struct, sys, math, os, os.path libraries.
 #### Python Version
 Python 3.4
 #### Results
-8203 / 10000 of the training data set are correctly classified.
+9024 / 10000 of the training data set are correctly classified with 5 classes and 20 iterations.

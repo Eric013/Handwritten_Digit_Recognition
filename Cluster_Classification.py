@@ -10,7 +10,7 @@ from Learning.Clustering import *
 # Computes the average images
 images_learning = dictionnary_images("DataBase_Extraction/train-labels.idx1-ubyte", 
     "DataBase_Extraction/train-images.idx3-ubyte")
-average = average_clustering(images_learning, 5, 20, "Images/Average_Clustering_")
+average = average_clustering(images_learning, 10, 20, "Images/Average_Clustering_")
 
 # Computes the training samples and the goals
 inputs, targets = input_output("DataBase_Extraction/t10k-labels.idx1-ubyte", 
