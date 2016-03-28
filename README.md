@@ -33,3 +33,4 @@ Needs PIL, struct, sys, math, os, os.path libraries.
 Python 3.4
 #### Results
 9024 / 10000 of the training data set are correctly classified with 5 classes and 20 iterations.
+9241 / 10000 of the training data set are correctly classified with 10 classes and 20 iterations.
