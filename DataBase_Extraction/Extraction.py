@@ -23,7 +23,7 @@ def dictionnary_images(index_fname, images_fname) :
      
     classify = {}
 
-    for n in range(100):
+    for n in range(nimages):
         label = int.from_bytes(index_f.read(1),byteorder='big')
         img = []
         for i in range(height * width) :
