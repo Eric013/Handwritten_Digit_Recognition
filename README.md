@@ -50,13 +50,12 @@ Python 3.4
 * 8462 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 3 neighbors.
 * 8030 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 4 neighbors.
 * 7535 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 5 neighbors.
-* 7153 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 6 neighbors.
-* 6717 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 7 neighbors.
-* 6203 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 8 neighbors.
-* 5829 / 10000 of the training data set are correctly classified with 10 classes, 20 iterations and 9 neighbors.
-#### Conclusion
-The algorithm of the K nearest neighbors is not interessant on the clustered dataset or need more classes.
+
+* 9562 / 10000 of the training data set are correctly classified with 100 classes, 20 iterations and 1 neighbors.
+* 9535 / 10000 of the training data set are correctly classified with 100 classes, 20 iterations and 2 neighbors.
+* 9457 / 10000 of the training data set are correctly classified with 100 classes, 20 iterations and 3 neighbors.
+* 9401 / 10000 of the training data set are correctly classified with 100 classes, 20 iterations and 4 neighbors.
+* 9356 / 10000 of the training data set are correctly classified with 100 classes, 20 iterations and 5 neighbors.
 
 ### Future work
-* Try the KNN algorithm on the full dataset
-* Try the KNN algorithm on a clustered dataset of 100, 200, 300 ... classes
+* Try the KNN algorithm on the full dataset with a KDTree structure
